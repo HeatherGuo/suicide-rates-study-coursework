@@ -8,6 +8,24 @@
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.4/fullpage.min.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
 
+    <style>
+    .fp-controlArrow.fp-prev {
+        left: 0;
+        border: none;
+        width: 128px;
+        height: 128px;
+        background: url(left.png) no-repeat;
+        cursor: pointer;
+    }
+    .fp-controlArrow.fp-next {
+        right: 0;
+        border: none;
+        width: 128px;
+        height: 128px;
+        background: url(right.png) no-repeat;
+        cursor: pointer;
+    }
+    </style>
 </head>
 <body>
 <div id="fullpage">
@@ -42,6 +60,30 @@
         </div>
         <div class="section mx-auto">
                 <div class='tableauPlaceholder' id='viz1547164855654' style='position: relative'><noscript><a href='#'><img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;S7&#47;S7NQHK3BP&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='path' value='shared&#47;S7NQHK3BP' /> <param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;S7&#47;S7NQHK3BP&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='filter' value='publish=yes' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1547164855654');                    var vizElement = divElement.getElementsByTagName('object')[0];                    vizElement.style.width='1016px';vizElement.style.height='991px';                    var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+        </div>        
+        <div class="section">
+            <div class="slide">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm mx-auto">
+                            <h1>Result of Rules Created by Labeling Strong Correlation as Increase and Decrease</h1>
+                            <img src="tree4(0.7).png" height="750" width="1000"/>
+                        </div>
+                    </div>
+                </div>
+                <div>Icons made by <a href="https://www.flaticon.com/authors/roundicons" title="Roundicons">Roundicons</a> from <a href="https://www.flaticon.com/" 			    title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" 			    title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
+            </div>
+            <div class="slide">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm mx-auto">
+                            <h1>Result of Rules Created by Labeling Strong and Moderate Correlation as Increase and Decrease</h1>
+                            <img src="tree3(0.3).png"  height="750" width="900"/>
+                        </div>
+                    </div>
+                </div>
+                <div>Icons made by <a href="https://www.flaticon.com/authors/roundicons" title="Roundicons">Roundicons</a> from <a href="https://www.flaticon.com/" 			    title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" 			    title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
+            </div>            
         </div>
 </div>
 
@@ -56,12 +98,12 @@
 new fullpage('#fullpage', {
     //options here
     navigation: true,
-    anchors: ['page1', 'page2'],
-    sectionsColor: [d3.color("LightPink"), '#FFFFFF'],
+    anchors: ['page1', 'page2', 'page3'],
+    sectionsColor: [d3.color("LightPink"), '#FFFFFF', d3.color("White")],
     continuous: false,
     autoScrolling: true,
     navigationPosition: 'right',
-    navigationTooltips: ['Introduction', "Slides"],
+    navigationTooltips: ['Introduction', "Slides", "Decision Tree"],
     autoScrolling:true,
     scrollHorizontally: true
 });
