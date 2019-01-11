@@ -1,0 +1,71 @@
+<html lang="en">
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.4/fullpage.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+
+</head>
+<body>
+<div id="fullpage">
+        <div class="section">            
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm">
+                        <h1>Introduction</h1>
+                        <h2>Purpose <small>To study global trend of suicide rate and correlation in recent years, finding a strategy for reducing self-harm behaviors.
+                            </small></h2>
+                        <h2>Research Methods</h2>
+                        <ul>
+                            <li>Literature Review: Find candidate features</li>
+                            <li>Data Collection: Collect data from different sources</li>
+                            <li>Data Cleaning and Processing: Filter unqualified data, make dataset and fill missing values by regression.</li>
+                            <li>Correlation: Pearson correlation by countries</li>
+                            <li>Decision Tree: 
+                                <ul>
+                                <li>Train a decision tree based on these correlation and trend of suicide rates in countries</li>
+                                <li>Decision tree visualization to find the key factors and rule</li>
+                                </ul>
+                            </li>
+                        </ul>                        
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm">
+                        <a href="https://github.com/HeatherGuo/suicide-rates-study-coursework" target="_blank">Source</a>
+                    </div>
+                </div>
+            </div>            
+        </div>
+        <div class="section mx-auto">
+                <div class='tableauPlaceholder' id='viz1547164855654' style='position: relative'><noscript><a href='#'><img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;S7&#47;S7NQHK3BP&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='path' value='shared&#47;S7NQHK3BP' /> <param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;S7&#47;S7NQHK3BP&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='filter' value='publish=yes' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1547164855654');                    var vizElement = divElement.getElementsByTagName('object')[0];                    vizElement.style.width='1016px';vizElement.style.height='991px';                    var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+        </div>
+</div>
+
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.4/fullpage.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.7.0/d3.min.js"></script>
+<script>
+    
+new fullpage('#fullpage', {
+    //options here
+    navigation: true,
+    anchors: ['page1', 'page2'],
+    sectionsColor: [d3.color("LightPink"), '#FFFFFF'],
+    continuous: false,
+    autoScrolling: true,
+    navigationPosition: 'right',
+    navigationTooltips: ['Introduction', "Slides"],
+    autoScrolling:true,
+    scrollHorizontally: true
+});
+    
+</script>
+</body>    
+</html>
